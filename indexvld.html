@@ -1,65 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redirecionando...</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carregando 4 fotos...</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
+    }
+    body {
       background-color: #000000;
       color: #ffffff;
+      height: 100vh;
+      font-family: Arial, sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
       text-align: center;
     }
-
-    .loader {
-      border: 8px solid #333;
-      border-top: 8px solid #ffffff;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      animation: spin 1s linear infinite;
-      margin-bottom: 20px;
-    }
-
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+    h1 {
+      font-size: 20px;
+      margin-top: 20px;
     }
   </style>
-
-  <!-- Facebook Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1455052062529160');
-    fbq('track', 'Purchase', {value: 16.00, currency: 'BRL'});
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1455052062529160&ev=Purchase&cd[value]=16.00&cd[currency]=BRL&noscript=1"/></noscript>
-  <!-- End Facebook Pixel Code -->
-
-  <script>
-    setTimeout(function() {
-      window.location.href = 'https://drive.google.com/file/d/1FSSzu3CN_wZptIO8N4HC8FyUCwxsSq1f/view?usp=sharing';
-    }, 3000);
+    window.onload = function() {
+      // Após 3 segundos, redireciona para o Google Drive
+      setTimeout(function() {
+        window.location.href = "https://drive.google.com/drive/folders/1IbqCoCVzqAa0HnbBNzOqZG8ZiNPWLjoe?usp=drive_link";
+      }, 3000);
+    }
   </script>
 </head>
 <body>
-  <div class="loader"></div>
-  <h1>Aguarde para receber...</h1>
+  <h1>carregando 4 fotos...</h1>
 </body>
 </html>
